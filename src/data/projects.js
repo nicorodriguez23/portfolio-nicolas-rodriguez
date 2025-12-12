@@ -7,6 +7,12 @@ import neonbyteAdmin from "../assets/neonbyte-admin-desktop.png";
 import neonbyteCart from "../assets/neonbyte-cart-desktop.png";
 import neonbyteHomeMobile from "../assets/neonbyte-home-mobile.png";
 
+// Imágenes de El Siguiente (usa estos nombres de archivo tal cual)
+import elSiguienteHome from "../assets/el-siguiente-home.png";
+import elSiguienteProfesionales from "../assets/el-siguiente-profesionales.png";
+import elSiguienteFormularioPaciente from "../assets/el-siguiente-formulario-paciente.png";
+import elSiguienteInicioSesion from "../assets/el-siguiente-inicio-de-sesion.png";
+
 export const projects = [
   {
     id: "neonbyte",
@@ -28,15 +34,20 @@ export const projects = [
   },
 
   {
-    id: "el-siguiente",
-    name: "El Siguiente · Sistema de turnos médicos",
-    role: "Web app MERN desplegada",
+    id: "gestor-turnos",
+    name: "Gestor de turnos · El Siguiente",
+    role: "Web app en desarrollo",
     description:
-      "Aplicación para gestionar turnos médicos entre pacientes y profesionales. Permite registrar usuarios por rol (paciente y profesional), iniciar sesión con JWT, crear y cancelar turnos, consultar reservas por código y recuperar la contraseña.",
-    stack: ["React", "Vite", "Node.js", "Express", "MongoDB", "JWT"],
-    liveUrl: "https://el-siguiente.vercel.app", // cambiá esta URL si tu deploy tiene otro nombre
+      "Aplicación para gestionar turnos entre profesionales y pacientes, con registro de usuarios con distintos roles, creación y cancelación de turnos, consulta por código y backend en Node/Express con MongoDB.",
+    stack: ["React", "Node.js", "MongoDB", "JWT"],
+    liveUrl: "https://el-siguiente.vercel.app",
     repoUrl: "https://github.com/nicorodriguez23/el-siguiente-app",
-    images: [],
+    images: [
+      elSiguienteHome,
+      elSiguienteProfesionales,
+      elSiguienteFormularioPaciente,
+      elSiguienteInicioSesion,
+    ],
   },
 
   {
