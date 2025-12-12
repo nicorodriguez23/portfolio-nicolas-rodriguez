@@ -1,6 +1,6 @@
 // src/data/projects.js
 
-// Imágenes de NeonByte
+// NeonByte
 import neonbyteHome from "../assets/neonbyte-preview-home.png";
 import neonbyteProduct from "../assets/neonbyte-product-desktop.png";
 import neonbyteUsers from "../assets/neonbyte-users-desktop.png";
@@ -8,11 +8,12 @@ import neonbyteAdmin from "../assets/neonbyte-admin-desktop.png";
 import neonbyteCart from "../assets/neonbyte-cart-desktop.png";
 import neonbyteHomeMobile from "../assets/neonbyte-home-mobile.png";
 
-// Imágenes de El Siguiente
+// El Siguiente (gestor de turnos)
 import elSiguienteHome from "../assets/el-siguiente-home.png";
 import elSiguienteProfesionales from "../assets/el-siguiente-profesionales.png";
-import elSiguienteLogin from "../assets/el-siguiente-login.png";
-import elSiguienteCodigo from "../assets/el-siguiente-codigo.png";
+// 👇 nombre REAL del archivo de formulario paciente
+import elSiguienteRegistro from "../assets/el-siguiente-formulario-paciente.png";
+import elSiguienteLogin from "../assets/el-siguiente-inicio-de-sesion.png";
 
 export const projects = [
   {
@@ -37,7 +38,7 @@ export const projects = [
   {
     id: "gestor-turnos",
     name: "Gestor de turnos · El Siguiente",
-    role: "Web app en desarrollo",
+    role: "Web app en producción",
     description:
       "Aplicación para gestionar turnos entre profesionales y pacientes, con registro de usuarios con distintos roles, creación y cancelación de turnos, consulta por código y backend en Node/Express con MongoDB.",
     stack: ["React", "Node.js", "MongoDB", "JWT"],
@@ -46,8 +47,8 @@ export const projects = [
     images: [
       elSiguienteHome,
       elSiguienteProfesionales,
+      elSiguienteRegistro,
       elSiguienteLogin,
-      elSiguienteCodigo,
     ],
   },
 
@@ -58,7 +59,8 @@ export const projects = [
     description:
       "Portfolio desarrollado con React y Vite para presentar proyectos, CV y datos de contacto, con foco en una navegación simple para reclutadores.",
     stack: ["React", "Vite"],
-    // Sin liveUrl ni repoUrl para que no se muestren los botones
+    liveUrl: "#",
+    repoUrl: "#",
     images: [],
   },
 ];
