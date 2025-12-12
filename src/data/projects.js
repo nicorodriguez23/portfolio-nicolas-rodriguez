@@ -1,5 +1,6 @@
 // src/data/projects.js
 
+// Imágenes de NeonByte
 import neonbyteHome from "../assets/neonbyte-preview-home.png";
 import neonbyteProduct from "../assets/neonbyte-product-desktop.png";
 import neonbyteUsers from "../assets/neonbyte-users-desktop.png";
@@ -7,11 +8,11 @@ import neonbyteAdmin from "../assets/neonbyte-admin-desktop.png";
 import neonbyteCart from "../assets/neonbyte-cart-desktop.png";
 import neonbyteHomeMobile from "../assets/neonbyte-home-mobile.png";
 
-// Imágenes de El Siguiente (usa estos nombres de archivo tal cual)
+// Imágenes de El Siguiente
 import elSiguienteHome from "../assets/el-siguiente-home.png";
 import elSiguienteProfesionales from "../assets/el-siguiente-profesionales.png";
-import elSiguienteFormularioPaciente from "../assets/el-siguiente-formulario-paciente.png";
-import elSiguienteInicioSesion from "../assets/el-siguiente-inicio-de-sesion.png";
+import elSiguienteLogin from "../assets/el-siguiente-login.png";
+import elSiguienteCodigo from "../assets/el-siguiente-codigo.png";
 
 export const projects = [
   {
@@ -45,8 +46,8 @@ export const projects = [
     images: [
       elSiguienteHome,
       elSiguienteProfesionales,
-      elSiguienteFormularioPaciente,
-      elSiguienteInicioSesion,
+      elSiguienteLogin,
+      elSiguienteCodigo,
     ],
   },
 
@@ -57,8 +58,7 @@ export const projects = [
     description:
       "Portfolio desarrollado con React y Vite para presentar proyectos, CV y datos de contacto, con foco en una navegación simple para reclutadores.",
     stack: ["React", "Vite"],
-    liveUrl: "#",
-    repoUrl: "#",
+    // Sin liveUrl ni repoUrl para que no se muestren los botones
     images: [],
   },
 ];
