@@ -70,10 +70,7 @@ export default function Proyectos() {
           <div className="project-gallery">
             {selectedImage && (
               <div className="project-gallery-main">
-                <img
-                  src={selectedImage}
-                  alt="Vista principal de NeonByte"
-                />
+                <img src={selectedImage} alt="Vista principal de NeonByte" />
               </div>
             )}
 
@@ -90,10 +87,7 @@ export default function Proyectos() {
                   }
                   onClick={() => setSelectedImage(src)}
                 >
-                  <img
-                    src={src}
-                    alt={`Captura ${index + 1} de NeonByte`}
-                  />
+                  <img src={src} alt={`Captura ${index + 1} de NeonByte`} />
                 </button>
               ))}
             </div>
@@ -106,8 +100,8 @@ export default function Proyectos() {
         <header className="section-header">
           <h2>Otros proyectos</h2>
           <p>
-            Algunos proyectos adicionales que estoy desarrollando o usando
-            como práctica para seguir mejorando el stack.
+            Algunos proyectos adicionales que estoy desarrollando o usando como
+            práctica para seguir mejorando el stack.
           </p>
         </header>
 
@@ -123,6 +117,23 @@ export default function Proyectos() {
                   {project.stack.map((tag) => (
                     <span key={tag}>{tag}</span>
                   ))}
+                </div>
+              )}
+
+              {/* Preview de imagen para proyectos como El Siguiente */}
+              {project.images && project.images.length > 0 && (
+                <div
+                  style={{
+                    marginTop: 16,
+                    borderRadius: "16px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    src={project.images[0]}
+                    alt={`Vista previa de ${project.name}`}
+                    style={{ display: "block", width: "100%", height: "auto" }}
+                  />
                 </div>
               )}
 
