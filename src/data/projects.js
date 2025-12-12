@@ -28,14 +28,14 @@ export const projects = [
   },
 
   {
-    id: "gestor-turnos",
-    name: "Gestor de turnos",
-    role: "Web app en desarrollo",
+    id: "el-siguiente",
+    name: "El Siguiente · Sistema de turnos médicos",
+    role: "Web app MERN desplegada",
     description:
-      "Aplicación para gestionar turnos entre profesionales y clientes, con registro de usuarios con distintos roles, creación y cancelación de turnos y práctica de modelos en MongoDB y endpoints en Node/Express.",
-    stack: ["React", "Node.js", "MongoDB"],
-    liveUrl: "#",
-    repoUrl: "#",
+      "Aplicación para gestionar turnos médicos entre pacientes y profesionales. Permite registrar usuarios por rol (paciente y profesional), iniciar sesión con JWT, crear y cancelar turnos, consultar reservas por código y recuperar la contraseña.",
+    stack: ["React", "Vite", "Node.js", "Express", "MongoDB", "JWT"],
+    liveUrl: "https://el-siguiente.vercel.app", // cambiá esta URL si tu deploy tiene otro nombre
+    repoUrl: "https://github.com/nicorodriguez23/el-siguiente-app",
     images: [],
   },
 

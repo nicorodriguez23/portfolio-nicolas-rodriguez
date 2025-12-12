@@ -26,6 +26,7 @@ export default function Proyectos() {
 
   return (
     <section className="page">
+      {/* Proyecto destacado: NeonByte */}
       <section className="section">
         <header className="section-header">
           <p className="hero-kicker">{neonbyte.role}</p>
@@ -42,23 +43,27 @@ export default function Proyectos() {
         )}
 
         <div className="project-actions" style={{ marginTop: 16 }}>
-          <a
-            href={neonbyte.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-          >
-            Ver online
-          </a>
+          {neonbyte.liveUrl && (
+            <a
+              href={neonbyte.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Ver online
+            </a>
+          )}
 
-          <a
-            href={neonbyte.repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-secondary"
-          >
-            Ver código
-          </a>
+          {neonbyte.repoUrl && (
+            <a
+              href={neonbyte.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+            >
+              Ver código
+            </a>
+          )}
         </div>
 
         {neonbyte.images && neonbyte.images.length > 0 && (
@@ -96,6 +101,7 @@ export default function Proyectos() {
         )}
       </section>
 
+      {/* Otros proyectos: acá entra El Siguiente */}
       <section className="section">
         <header className="section-header">
           <h2>Otros proyectos</h2>
@@ -117,6 +123,32 @@ export default function Proyectos() {
                   {project.stack.map((tag) => (
                     <span key={tag}>{tag}</span>
                   ))}
+                </div>
+              )}
+
+              {(project.liveUrl || project.repoUrl) && (
+                <div className="project-actions" style={{ marginTop: 16 }}>
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary"
+                    >
+                      Ver online
+                    </a>
+                  )}
+
+                  {project.repoUrl && (
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-secondary"
+                    >
+                      Ver código
+                    </a>
+                  )}
                 </div>
               )}
             </article>
