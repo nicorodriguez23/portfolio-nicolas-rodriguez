@@ -57,29 +57,6 @@ export default function Proyectos() {
           </div>
         )}
 
-        <div className="project-actions" style={{ marginTop: 16 }}>
-          {neonbyte.liveUrl && (
-            <a
-              href={neonbyte.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-            >
-              Ver online
-            </a>
-          )}
-
-          {neonbyte.repoUrl && (
-            <a
-              href={neonbyte.repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-secondary"
-            >
-              Ver código
-            </a>
-          )}
-        </div>
 
         {neonbyte.images && neonbyte.images.length > 0 && (
           <div className="project-gallery">
