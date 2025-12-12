@@ -1,6 +1,7 @@
+// src/pages/Home.jsx
 import { Link } from "react-router-dom";
 
-const featured = {
+const featuredNeonbyte = {
   title: "NeonByte · E-commerce gamer",
   description:
     "Tienda online de componentes para PC gamer con autenticación por roles, panel de administración, carrito, creación de órdenes y deploy completo (frontend + backend).",
@@ -9,7 +10,7 @@ const featured = {
   codeUrl: "https://github.com/nicorodriguez23/Neonbyte",
 };
 
-const elSiguiente = {
+const featuredSiguiente = {
   title: "El Siguiente · Gestor de turnos médicos",
   description:
     "Aplicación web para profesionales y pacientes, con registro de usuarios, login, gestión de turnos y cancelación, desarrollada con React, Node.js, Express y MongoDB.",
@@ -21,13 +22,14 @@ const elSiguiente = {
 export default function Home() {
   return (
     <section className="page">
+      {/* HERO */}
       <section className="hero">
         <div>
           <p className="hero-kicker"> DESARROLLADOR WEB</p>
           <h1>¡Bienvenidos! soy Nicolás Rodríguez</h1>
           <p className="hero-subtitle">
-            Desarrollador Full Stack. Construyo proyectos
-            reales buscando nuevas oportunidades en el mundo IT.
+            Desarrollador Full Stack. Construyo proyectos reales buscando nuevas
+            oportunidades en el mundo IT.
           </p>
 
           <div className="hero-actions">
@@ -56,6 +58,7 @@ export default function Home() {
         </aside>
       </section>
 
+      {/* PROYECTO PRINCIPAL: NEONBYTE */}
       <section className="section">
         <header className="section-header">
           <h2>Proyecto Neonbyte</h2>
@@ -68,18 +71,20 @@ export default function Home() {
 
         <article className="project-card">
           <span className="project-badge">Proyecto destacado</span>
-          <h2>{featured.title}</h2>
-          <p className="project-description">{featured.description}</p>
+          <h2>{featuredNeonbyte.title}</h2>
+          <p className="project-description">
+            {featuredNeonbyte.description}
+          </p>
 
           <div className="hero-tags" style={{ marginBottom: "12px" }}>
-            {featured.stack.map((tag) => (
+            {featuredNeonbyte.stack.map((tag) => (
               <li key={tag}>{tag}</li>
             ))}
           </div>
 
           <div className="project-actions">
             <a
-              href={featured.liveUrl}
+              href={featuredNeonbyte.liveUrl}
               target="_blank"
               rel="noreferrer"
               className="btn btn-primary"
@@ -87,7 +92,7 @@ export default function Home() {
               Ver NeonByte online
             </a>
             <a
-              href={featured.codeUrl}
+              href={featuredNeonbyte.codeUrl}
               target="_blank"
               rel="noreferrer"
               className="btn btn-outline"
@@ -98,6 +103,7 @@ export default function Home() {
         </article>
       </section>
 
+      {/* SEGUNDO PROYECTO: EL SIGUIENTE */}
       <section className="section">
         <header className="section-header">
           <h2>Gestor de turnos · El Siguiente</h2>
@@ -109,18 +115,20 @@ export default function Home() {
 
         <article className="project-card">
           <span className="project-badge">Web app en producción</span>
-          <h2>{elSiguiente.title}</h2>
-          <p className="project-description">{elSiguiente.description}</p>
+          <h2>{featuredSiguiente.title}</h2>
+          <p className="project-description">
+            {featuredSiguiente.description}
+          </p>
 
           <div className="hero-tags" style={{ marginBottom: "12px" }}>
-            {elSiguiente.stack.map((tag) => (
+            {featuredSiguiente.stack.map((tag) => (
               <li key={tag}>{tag}</li>
             ))}
           </div>
 
           <div className="project-actions">
             <a
-              href={elSiguiente.liveUrl}
+              href={featuredSiguiente.liveUrl}
               target="_blank"
               rel="noreferrer"
               className="btn btn-primary"
@@ -128,7 +136,7 @@ export default function Home() {
               Ver El Siguiente online
             </a>
             <a
-              href={elSiguiente.codeUrl}
+              href={featuredSiguiente.codeUrl}
               target="_blank"
               rel="noreferrer"
               className="btn btn-outline"
