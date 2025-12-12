@@ -1,3 +1,4 @@
+// src/pages/Proyectos.jsx
 import React, { useState } from "react";
 import { projects } from "../data/projects";
 
@@ -120,20 +121,24 @@ export default function Proyectos() {
                 </div>
               )}
 
-              {/* Preview de imagen para proyectos como El Siguiente */}
+              {/* Mini-galería para El Siguiente (y cualquier proyecto con imágenes) */}
               {project.images && project.images.length > 0 && (
                 <div
-                  style={{
-                    marginTop: 16,
-                    borderRadius: "16px",
-                    overflow: "hidden",
-                  }}
+                  className="project-gallery-thumbs"
+                  style={{ marginTop: 16 }}
                 >
-                  <img
-                    src={project.images[0]}
-                    alt={`Vista previa de ${project.name}`}
-                    style={{ display: "block", width: "100%", height: "auto" }}
-                  />
+                  {project.images.map((src, index) => (
+                    <div
+                      key={index}
+                      className="project-gallery-thumb"
+                      style={{ cursor: "default" }}
+                    >
+                      <img
+                        src={src}
+                        alt={`Captura ${index + 1} de ${project.name}`}
+                      />
+                    </div>
+                  ))}
                 </div>
               )}
 
