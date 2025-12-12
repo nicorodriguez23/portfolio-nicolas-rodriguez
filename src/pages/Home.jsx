@@ -10,11 +10,11 @@ const featuredNeonbyte = {
   codeUrl: "https://github.com/nicorodriguez23/Neonbyte",
 };
 
-const featuredSiguiente = {
+const featuredElSiguiente = {
   title: "El Siguiente · Gestor de turnos médicos",
   description:
-    "Aplicación web para profesionales y pacientes, con registro de usuarios, login, gestión de turnos y cancelación, desarrollada con React, Node.js, Express y MongoDB.",
-  stack: ["React", "Node.js", "Express", "MongoDB"],
+    "Web app para gestionar turnos entre profesionales y pacientes, con login, roles, consulta por código y manejo simple de reservas.",
+  stack: ["React", "Node.js", "MongoDB", "JWT"],
   liveUrl: "https://el-siguiente.vercel.app",
   codeUrl: "https://github.com/nicorodriguez23/el-siguiente-app",
 };
@@ -58,7 +58,7 @@ export default function Home() {
         </aside>
       </section>
 
-      {/* PROYECTO PRINCIPAL: NEONBYTE */}
+      {/* PROYECTO DESTACADO: NEONBYTE */}
       <section className="section">
         <header className="section-header">
           <h2>Proyecto Neonbyte</h2>
@@ -95,7 +95,7 @@ export default function Home() {
               href={featuredNeonbyte.codeUrl}
               target="_blank"
               rel="noreferrer"
-              className="btn btn-outline"
+              className="btn btn-secondary"
             >
               Ver código
             </a>
@@ -115,20 +115,20 @@ export default function Home() {
 
         <article className="project-card">
           <span className="project-badge">Web app en producción</span>
-          <h2>{featuredSiguiente.title}</h2>
+          <h2>{featuredElSiguiente.title}</h2>
           <p className="project-description">
-            {featuredSiguiente.description}
+            {featuredElSiguiente.description}
           </p>
 
           <div className="hero-tags" style={{ marginBottom: "12px" }}>
-            {featuredSiguiente.stack.map((tag) => (
+            {featuredElSiguiente.stack.map((tag) => (
               <li key={tag}>{tag}</li>
             ))}
           </div>
 
           <div className="project-actions">
             <a
-              href={featuredSiguiente.liveUrl}
+              href={featuredElSiguiente.liveUrl}
               target="_blank"
               rel="noreferrer"
               className="btn btn-primary"
@@ -136,10 +136,10 @@ export default function Home() {
               Ver El Siguiente online
             </a>
             <a
-              href={featuredSiguiente.codeUrl}
+              href={featuredElSiguiente.codeUrl}
               target="_blank"
               rel="noreferrer"
-              className="btn btn-outline"
+              className="btn btn-secondary"
             >
               Ver código
             </a>
