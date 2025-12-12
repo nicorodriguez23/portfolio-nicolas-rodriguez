@@ -9,6 +9,15 @@ const featured = {
   codeUrl: "https://github.com/nicorodriguez23/Neonbyte",
 };
 
+const elSiguiente = {
+  title: "El Siguiente · Gestor de turnos médicos",
+  description:
+    "Aplicación web para profesionales y pacientes, con registro de usuarios, login, gestión de turnos y cancelación, desarrollada con React, Node.js, Express y MongoDB.",
+  stack: ["React", "Node.js", "Express", "MongoDB"],
+  liveUrl: "https://el-siguiente.vercel.app",
+  codeUrl: "https://github.com/nicorodriguez23/el-siguiente-app",
+};
+
 export default function Home() {
   return (
     <section className="page">
@@ -75,10 +84,51 @@ export default function Home() {
               rel="noreferrer"
               className="btn btn-primary"
             >
-              Ver online
+              Ver NeonByte online
             </a>
             <a
               href={featured.codeUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-outline"
+            >
+              Ver código
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section className="section">
+        <header className="section-header">
+          <h2>Gestor de turnos · El Siguiente</h2>
+          <p>
+            Web app para gestionar turnos entre profesionales y pacientes, con
+            login, roles y manejo simple de reservas.
+          </p>
+        </header>
+
+        <article className="project-card">
+          <span className="project-badge">Web app en producción</span>
+          <h2>{elSiguiente.title}</h2>
+          <p className="project-description">{elSiguiente.description}</p>
+
+          <div className="hero-tags" style={{ marginBottom: "12px" }}>
+            {elSiguiente.stack.map((tag) => (
+              <li key={tag}>{tag}</li>
+            ))}
+          </div>
+
+          <div className="project-actions">
+            <a
+              href={elSiguiente.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary"
+            >
+              Ver El Siguiente online
+            </a>
+            <a
+              href={elSiguiente.codeUrl}
               target="_blank"
               rel="noreferrer"
               className="btn btn-outline"

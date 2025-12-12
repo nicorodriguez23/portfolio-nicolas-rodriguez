@@ -123,6 +123,14 @@ export default function Contacto() {
               <span>🛒</span> Ver NeonByte en producción
             </a>
 
+            <a
+              href="https://el-siguiente.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>📅</span> Ver El Siguiente en producción
+            </a>
+
             <p style={{ marginTop: 16, color: "var(--text-soft)" }}>
               Respondo especialmente a mensajes relacionados con oportunidades
               como <strong>trainee / junior</strong> en desarrollo web, proyectos

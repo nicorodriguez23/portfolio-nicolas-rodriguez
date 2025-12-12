@@ -83,6 +83,16 @@ export default function SobreMi() {
               Ver NeonByte online
             </a>
 
+            <a
+              href="https://el-siguiente.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+              style={{ marginBottom: "10px" }}
+            >
+              Ver El Siguiente online
+            </a>
+
             <br />
 
             <a
