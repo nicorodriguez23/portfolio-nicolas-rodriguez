@@ -1,16 +1,54 @@
-# React + Vite
+# Portfolio — Nicolás Rodríguez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio profesional para presentar proyectos web y perfil técnico.
 
-Currently, two official plugins are available:
+## Demo
+- https://portfolio-nicolas-rodriguez.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Stack
+- React + Vite
+- React Router DOM
+- CSS / UI responsive
+- Deploy: Vercel
 
-## React Compiler
+## Proyectos destacados
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### NeonByte — E-commerce MERN
+E-commerce full stack con funcionalidades típicas de producto.
+- Demo: https://neonbyte-one.vercel.app/
+- Repo: https://github.com/nicorodriguez23/Neonbyte
+- Features:
+  - Registro/Login con JWT
+  - Roles (admin/cliente)
+  - CRUD de productos
+  - Carrito y órdenes
+  - Integración Front/Back + deploy
 
-## Expanding the ESLint configuration
+### El Siguiente — App React
+Aplicación frontend enfocada en UI/UX.
+- Demo: https://el-siguiente.vercel.app/
+- Repo: https://github.com/nicorodriguez23/el-siguiente-app
+- Features:
+  - Componentes reutilizables
+  - Navegación y estados de UI
+  - Diseño responsive
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Ejecutar localmente
+```bash
+npm install
+npm run dev
+
+
+Scripts
+
+npm run dev — entorno de desarrollo
+
+npm run build — build de producción
+
+npm run preview — previsualizar build
+
+Contacto
+
+LinkedIn: https://www.linkedin.com/in/nicolas-rodriguez-tech
+
+Email: nicorodriguez953@gmail.com
