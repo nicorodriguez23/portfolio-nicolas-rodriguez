@@ -1,44 +1,22 @@
-// src/pages/Home.jsx
 import { Link } from "react-router-dom";
-
-const featuredNeonbyte = {
-  title: "NeonByte · E-commerce gamer",
-  description:
-    "Tienda online de componentes para PC gamer con autenticación por roles, panel de administración, carrito, creación de órdenes y deploy completo (frontend + backend).",
-  stack: ["MERN", "JWT", "Panel admin", "Deploy"],
-  liveUrl: "https://neonbyte-one.vercel.app",
-  codeUrl: "https://github.com/nicorodriguez23/Neonbyte",
-};
-
-const featuredElSiguiente = {
-  title: "El Siguiente · Gestor de turnos médicos",
-  description:
-    "Web app para gestionar turnos entre profesionales y pacientes, con login, roles, consulta por código y manejo simple de reservas.",
-  stack: ["React", "Node.js", "MongoDB", "JWT"],
-  liveUrl: "https://el-siguiente.vercel.app",
-  codeUrl: "https://github.com/nicorodriguez23/el-siguiente-app",
-};
 
 export default function Home() {
   return (
     <section className="page">
+
       {/* HERO */}
       <section className="hero">
         <div>
-          <p className="hero-kicker"> DESARROLLADOR WEB</p>
-          <h1>¡Bienvenidos! soy Nicolás Rodríguez</h1>
+          <p className="hero-kicker">FRONTEND DEVELOPER · FULL STACK MERN</p>
+          <h1>Soy Nicolás Rodríguez</h1>
           <p className="hero-subtitle">
-            Desarrollador Full Stack. Construyo proyectos reales buscando nuevas
-            oportunidades en el mundo IT.
+            Construyo interfaces web funcionales y bien estructuradas, con
+            capacidad de integrar frontend y backend de punta a punta.
+            Proyectos reales en producción.
           </p>
-
           <div className="hero-actions">
-            <Link to="/proyectos" className="btn btn-primary">
-              Ver proyectos
-            </Link>
-            <Link to="/cv" className="btn btn-secondary">
-              Ver CV
-            </Link>
+            <Link to="/proyectos" className="btn btn-primary">Ver proyectos</Link>
+            <Link to="/cv" className="btn btn-secondary">Ver CV</Link>
           </div>
         </div>
 
@@ -46,106 +24,69 @@ export default function Home() {
           <p className="hero-panel-title">Stack principal</p>
           <ul className="hero-tags">
             <li>React &amp; Vite</li>
+            <li>JavaScript (ES6+)</li>
+            <li>CSS3 &amp; Canvas API</li>
             <li>Node.js &amp; Express</li>
-            <li>MongoDB &amp; Mongoose</li>
+            <li>MongoDB &amp; JWT</li>
             <li>Git &amp; GitHub</li>
           </ul>
           <p className="hero-panel-text">
-            Hoy estoy enfocado en el stack MERN, buenas prácticas y proyectos
-            listos para producción. Me interesa trabajar en equipo y seguir
-            aprendiendo en un entorno profesional.
+            Stack MERN · buenas prácticas · proyectos listos para producción.
           </p>
         </aside>
       </section>
 
-      {/* PROYECTO DESTACADO: NEONBYTE */}
+      {/* NEONBYTE */}
       <section className="section">
-        <header className="section-header">
-          <h2>Proyecto Neonbyte</h2>
-          <p>
-            NeonByte es mi e-commerce completo para componentes gamer, donde
-            puse en práctica autenticación, roles, panel de administración,
-            carrito y órdenes.
-          </p>
-        </header>
-
         <article className="project-card">
-          <span className="project-badge">Proyecto destacado</span>
-          <h2>{featuredNeonbyte.title}</h2>
+          <span className="project-badge">Proyecto destacado · Full Stack MERN</span>
+          <h2>NeonByte · E-commerce gamer</h2>
           <p className="project-description">
-            {featuredNeonbyte.description}
+            Interfaz en React con diseño propio, Canvas API y animaciones RGB.
+            Autenticación JWT con roles, panel admin con CRUD, carrito y órdenes.
+            API REST propia con Node.js/Express + MongoDB. Deploy en Vercel + Render.
           </p>
-
-          <div className="hero-tags" style={{ marginBottom: "12px" }}>
-            {featuredNeonbyte.stack.map((tag) => (
+          <ul className="hero-tags" style={{ marginBottom: "12px" }}>
+            {["React", "Vite", "CSS3", "Canvas API", "Node.js", "MongoDB", "JWT"].map((tag) => (
               <li key={tag}>{tag}</li>
             ))}
-          </div>
-
+          </ul>
           <div className="project-actions">
-            <a
-              href={featuredNeonbyte.liveUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
+            <a href="https://neonbyte-one.vercel.app" target="_blank" rel="noreferrer" className="btn btn-primary">
               Ver NeonByte online
             </a>
-            <a
-              href={featuredNeonbyte.codeUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-secondary"
-            >
+            <a href="https://github.com/nicorodriguez23/Neonbyte" target="_blank" rel="noreferrer" className="btn btn-secondary">
               Ver código
             </a>
           </div>
         </article>
       </section>
 
-      {/* SEGUNDO PROYECTO: EL SIGUIENTE */}
+      {/* EL SIGUIENTE */}
       <section className="section">
-        <header className="section-header">
-          <h2>Gestor de turnos · El Siguiente</h2>
-          <p>
-            Web app para gestionar turnos entre profesionales y pacientes, con
-            login, roles y manejo simple de reservas.
-          </p>
-        </header>
-
         <article className="project-card">
           <span className="project-badge">Web app en producción</span>
-          <h2>{featuredElSiguiente.title}</h2>
+          <h2>El Siguiente · Gestor de turnos</h2>
           <p className="project-description">
-            {featuredElSiguiente.description}
+            App responsive con login, roles (profesional/paciente), creación y
+            cancelación de turnos. Backend en Node/Express + MongoDB. Deploy en Vercel + Render.
           </p>
-
-          <div className="hero-tags" style={{ marginBottom: "12px" }}>
-            {featuredElSiguiente.stack.map((tag) => (
+          <ul className="hero-tags" style={{ marginBottom: "12px" }}>
+            {["React", "Node.js", "MongoDB", "JWT"].map((tag) => (
               <li key={tag}>{tag}</li>
             ))}
-          </div>
-
+          </ul>
           <div className="project-actions">
-            <a
-              href={featuredElSiguiente.liveUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
+            <a href="https://el-siguiente.vercel.app" target="_blank" rel="noreferrer" className="btn btn-primary">
               Ver El Siguiente online
             </a>
-            <a
-              href={featuredElSiguiente.codeUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-secondary"
-            >
+            <a href="https://github.com/nicorodriguez23/el-siguiente-app" target="_blank" rel="noreferrer" className="btn btn-secondary">
               Ver código
             </a>
           </div>
         </article>
       </section>
+
     </section>
   );
 }

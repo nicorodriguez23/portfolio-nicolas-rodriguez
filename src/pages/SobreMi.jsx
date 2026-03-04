@@ -7,70 +7,67 @@ export default function SobreMi() {
         <header className="section-header">
           <h1>Sobre mí</h1>
           <p>
-            Quién soy, de dónde vengo y qué puedo
-            aportar a tu equipo de desarrollo.
+            Quién soy, de dónde vengo y qué puedo aportar a tu equipo.
           </p>
         </header>
 
         <div className="about-layout">
           <div className="about-text">
             <p>
-              Soy <strong>Ignacio Nicolás Rodríguez</strong>, desarrollador{" "}
-              <strong>Full Stack</strong>. Vengo del
-              rubro comercio, donde colaboré en la dirección de equipos,
-              coordinando objetivos y trabajando cara a cara con clientes.
+              Soy <strong>Nicolás Rodríguez</strong>, Frontend Developer con
+              base full stack (MERN). Vengo del rubro comercio, donde lideré
+              equipos, coordiné operaciones y trabajé cara a cara con clientes
+              durante más de 4 años en Adidas.
             </p>
 
             <p>
               Esa experiencia me dio una base sólida de{" "}
               <strong>comunicación</strong>, <strong>organización</strong> y{" "}
-              <strong>resolución de problemas</strong> bajo presión. Hoy
-              estoy enfocado en aplicar esas habilidades al desarrollo de
-              software: construir aplicaciones y páginas web claras,
-              mantenibles y listas para uso real.
+              <strong>resolución de problemas</strong> bajo presión — habilidades
+              que no son comunes en perfiles técnicos y que aplico directamente
+              al desarrollo de software.
             </p>
 
             <p>
-              Actualmente estoy ampliando mi experiencia con proyectos,
-              como <strong>NeonByte</strong> (e-commerce gamer con roles, panel
-              admin, carrito y órdenes) y un <strong>gestor de turnos</strong>{" "}
-              para profesionales y clientes. Mi objetivo es dar un salto{" "}
-              profesional en IT dentro de un equipo donde
-              pueda seguir aprendiendo y aportar valor.
+              Me especializo en construir interfaces con <strong>React</strong>{" "}
+              que sean funcionales, bien estructuradas y con buena experiencia
+              de usuario. También manejo el backend con{" "}
+              <strong>Node.js/Express + MongoDB</strong>, lo que me permite
+              integrar frontend y backend de punta a punta sin depender de otro
+              equipo para salir a producción.
             </p>
 
             <p>
-              Me siento cómodo trabajando con{" "}
-              <strong>JavaScript/TypeScript</strong>,{" "}
-              <strong>React + Vite</strong> en el frontend y{" "}
-              <strong>Node.js/Express + MongoDB</strong> en el backend, pero
-              también estoy abierto a aprender nuevas tecnologías según lo
-              requiera cada proyecto.
+              Mi proyecto principal es <strong>NeonByte</strong>, un e-commerce
+              gamer completo con autenticación JWT, roles, panel de
+              administración, carrito, órdenes y deploy en producción. También
+              desarrollé <strong>El Siguiente</strong>, un gestor de turnos para
+              profesionales y pacientes con login, roles y manejo de reservas.
             </p>
 
             <p>
-              Si tu equipo busca a alguien responsable, con actitud de
-              aprendizaje constante, me encantaría que conversemos.
+              Busco incorporarme a un equipo donde pueda aportar desde el día
+              uno y seguir creciendo profesionalmente.
             </p>
           </div>
 
           <aside>
             <h2 style={{ marginTop: 0 }}>En resumen</h2>
             <ul className="tags-list">
-              <li>Stack MERN</li>
               <li>React &amp; Vite</li>
+              <li>JavaScript (ES6+)</li>
+              <li>CSS3 &amp; Canvas API</li>
               <li>Node.js &amp; Express</li>
               <li>MongoDB &amp; Mongoose</li>
               <li>JWT &amp; autenticación</li>
               <li>Diseño responsive</li>
               <li>Git &amp; GitHub</li>
+              <li>Liderazgo operativo</li>
               <li>Trabajo en equipo</li>
-              <li>Atención al detalle</li>
             </ul>
 
             <p style={{ color: "var(--text-soft)", marginBottom: "12px" }}>
-              Podés ver el proyecto principal que estoy usando como carta de
-              presentación profesional acá:
+              Podés ver mis proyectos en producción acá:
             </p>
 
             <a

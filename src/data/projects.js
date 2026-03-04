@@ -1,17 +1,16 @@
 // src/data/projects.js
 
-// NeonByte
-import neonbyteHome from "../assets/neonbyte-preview-home.png";
-import neonbyteProduct from "../assets/neonbyte-product-desktop.png";
-import neonbyteUsers from "../assets/neonbyte-users-desktop.png";
-import neonbyteAdmin from "../assets/neonbyte-admin-desktop.png";
-import neonbyteCart from "../assets/neonbyte-cart-desktop.png";
-import neonbyteHomeMobile from "../assets/neonbyte-home-mobile.png";
+// NeonByte — imágenes actualizadas (versión nueva)
+import neonbyteHome from "../assets/portfolio-neonbytehome.png";
+import neonbyteProducts from "../assets/neonbyteproductos-portfolio.png";
+import neonbyteProduct from "../assets/productoneonbyte-portfolio.png";
+import neonbyteAdmin from "../assets/gestionproductos-portfolio.png";
+import neonbyteUsers from "../assets/gestionusuarios-portfolio.png";
+import neonbyteHomeMobile from "../assets/mobileneonbyte-portfolio.png";
 
-// El Siguiente (gestor de turnos)
+// El Siguiente
 import elSiguienteHome from "../assets/el-siguiente-home.png";
 import elSiguienteProfesionales from "../assets/el-siguiente-profesionales.png";
-// 👇 nombre REAL del archivo de formulario paciente
 import elSiguienteRegistro from "../assets/el-siguiente-formulario-paciente.png";
 import elSiguienteLogin from "../assets/el-siguiente-inicio-de-sesion.png";
 
@@ -19,16 +18,16 @@ export const projects = [
   {
     id: "neonbyte",
     name: "NeonByte · E-commerce gamer",
-    role: "Proyecto integrador MERN",
+    role: "Full Stack Developer · MERN",
     description:
-      "Tienda online de componentes gamer con autenticación por roles (cliente y administrador), panel de administración, carrito, creación de órdenes y deploy completo (frontend + backend).",
-    stack: ["MERN", "JWT", "Panel admin", "Carrito", "Órdenes"],
+      "E-commerce gamer de punta a punta. Frontend en React con diseño propio, variables CSS, animaciones RGB y Canvas API. Autenticación JWT con roles admin/cliente, panel de administración con CRUD, carrito en localStorage y flujo de órdenes hasta comprobante imprimible. API REST con Node.js/Express + MongoDB Atlas. Deploy en Vercel (frontend) y Render (backend).",
+    stack: ["React", "Vite", "CSS3", "Canvas API", "Node.js", "Express", "MongoDB", "JWT", "Vercel", "Render"],
     liveUrl: "https://neonbyte-one.vercel.app",
     repoUrl: "https://github.com/nicorodriguez23/Neonbyte",
     images: [
       neonbyteHome,
+      neonbyteProducts,
       neonbyteProduct,
-      neonbyteCart,
       neonbyteAdmin,
       neonbyteUsers,
       neonbyteHomeMobile,
@@ -40,8 +39,8 @@ export const projects = [
     name: "Gestor de turnos · El Siguiente",
     role: "Web app en producción",
     description:
-      "Aplicación para gestionar turnos entre profesionales y pacientes, con registro de usuarios con distintos roles, creación y cancelación de turnos, consulta por código y backend en Node/Express con MongoDB.",
-    stack: ["React", "Node.js", "MongoDB", "JWT"],
+      "App responsive para gestionar turnos entre profesionales y pacientes. Login con JWT, roles de usuario, creación y cancelación de turnos, consulta por código. Backend en Node/Express + MongoDB. Deploy en Vercel + Render.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
     liveUrl: "https://el-siguiente.vercel.app",
     repoUrl: "https://github.com/nicorodriguez23/el-siguiente-app",
     images: [
@@ -57,10 +56,10 @@ export const projects = [
     name: "Portfolio personal",
     role: "Este sitio",
     description:
-      "Portfolio desarrollado con React y Vite para presentar proyectos, CV y datos de contacto, con foco en una navegación simple para reclutadores.",
-    stack: ["React", "Vite"],
-    liveUrl: "#",
-    repoUrl: "#",
+      "Portfolio desarrollado con React y Vite. Presenta proyectos, CV descargable y contacto directo por Gmail. Deploy en Vercel.",
+    stack: ["React", "Vite", "React Router", "Vercel"],
+    liveUrl: "https://portfolio-nicolas-rodriguez.vercel.app",
+    repoUrl: "https://github.com/nicorodriguez23/portfolio-nicolas-rodriguez",
     images: [],
   },
 ];

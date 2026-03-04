@@ -122,8 +122,7 @@ export default function Proyectos() {
         <header className="section-header">
           <h2>Otros proyectos</h2>
           <p>
-            Algunos proyectos adicionales que estoy desarrollando o usando
-            como práctica para seguir mejorando el stack.
+            Otros proyectos desarrollados y deployados en producción.
           </p>
         </header>
 

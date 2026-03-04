@@ -1,6 +1,6 @@
 import React from "react";
 
-const CV_PDF_PATH = "/nicolas-rodriguez-cv.pdf";
+const CV_PDF_PATH = "/CV_Nicolas_Rodriguez.pdf";
 
 export default function CV() {
   return (
@@ -9,43 +9,46 @@ export default function CV() {
         <header className="section-header">
           <h1>Currículum / Perfil profesional</h1>
           <p>
-            Acá podés ver mi CV en PDF y mi certificado de
-            Full Stack que realicé en Educación IT.
+            Acá podés ver y descargar mi CV actualizado, y el certificado de
+            formación como Full Stack Developer de Educación IT.
           </p>
         </header>
 
         <div className="cv-layout">
           <div>
-            <h2 style={{ marginTop: 0 }}>Ignacio Nicolás Rodríguez</h2>
+            <h2 style={{ marginTop: 0 }}>Nicolás Rodríguez</h2>
             <p style={{ marginBottom: 6, color: "var(--text-soft)" }}>
-              <strong>Desarrollador Full Stack</strong>
+              <strong>Frontend Developer · Full Stack MERN · React · Node.js</strong>
             </p>
             <p style={{ marginTop: 0, color: "var(--text-soft)" }}>
-              Enfocado en construir aplicaciones web modernas, que faciliten
-              la navegacion del usuario, con React, Vite, Node/Express y
-              MongoDB. Vengo del rubro comercio, con experiencia liderando
-              equipos y trabajando con clientes en primera línea. Busco mi
-              primera oportunidad profesional en IT, aportando tanto habilidades
-              técnicas como blandas.
+              Frontend Developer con base full stack (MERN). Construí y deployé
+              aplicaciones web reales con React, diseño responsive, autenticación
+              JWT y APIs REST. Me especializo en construir interfaces funcionales,
+              bien estructuradas y con buena experiencia de usuario. Mi background
+              en liderazgo operativo me da una mirada práctica y orientada a
+              resultados que no es común en perfiles técnicos. Busco incorporarme
+              a un equipo donde pueda aportar desde el día uno y seguir creciendo.
             </p>
 
             <ul className="cv-list">
               <li>
-                Stack principal: React, Vite, Node.js/Express, MongoDB, JWT.
+                Frontend: React, Vite, JavaScript (ES6+), CSS3, Canvas API,
+                Responsive Design.
               </li>
               <li>
-                Proyecto destacado: <strong>NeonByte</strong>, e-commerce gamer
-                completo (roles, panel admin, carrito y órdenes).
+                Backend: Node.js, Express, MongoDB, Mongoose, JWT, APIs REST.
               </li>
               <li>
-                Otros proyectos: gestor de turnos (web app) y portfolio personal
-                en React/Vite.
+                Proyecto destacado: <strong>NeonByte</strong> — e-commerce gamer
+                completo con roles, panel admin, carrito, órdenes y deploy en
+                producción.
               </li>
             </ul>
           </div>
+
           <div className="cv-mock">
             <h3 className="cv-title">Acciones rápidas</h3>
-            <p className="cv-subtitle"></p>
+            <p className="cv-subtitle">CV actualizado · Marzo 2026</p>
 
             <div className="cv-actions">
               <a
@@ -58,18 +61,26 @@ export default function CV() {
               </a>
 
               <a
+                href={CV_PDF_PATH}
+                download="CV_Nicolas_Rodriguez.pdf"
+                className="btn btn-secondary"
+              >
+                Descargar CV
+              </a>
+
+              <a
                 href="https://www.educacionit.com/perfil/nicolas-rodriguez-1034216/certificado/73593?_gl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
               >
-                Ver Certificado
+                Ver Certificado Educación IT
               </a>
             </div>
 
             <p className="cv-note" style={{ marginTop: 14 }}>
-              El certificado corresponde a la formación práctica como{" "}
-              <strong>Full Stack</strong>
+              Certificación práctica como <strong>Full Stack Developer</strong>{" "}
+              con stack MERN · JavaScript, React, Node.js, Express, MongoDB.
             </p>
           </div>
         </div>

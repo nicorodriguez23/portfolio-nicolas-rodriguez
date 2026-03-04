@@ -893,3 +893,14 @@ body {
     transform: translateY(100%);
   }
 }
+
+/* Fix thumbs galería en mobile */
+@media (max-width: 600px) {
+  .project-gallery-thumbs {
+    justify-content: center;
+  }
+  .project-gallery-thumb img {
+    width: 120px;
+    height: 75px;
+  }
+}

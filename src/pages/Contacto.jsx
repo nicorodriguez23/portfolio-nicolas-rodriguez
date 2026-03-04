@@ -9,21 +9,19 @@ export default function Contacto() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    setForm((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const subject = encodeURIComponent("Contacto desde el portfolio");
     const body = encodeURIComponent(
       `Nombre: ${form.nombre}\nEmail: ${form.email}\n\n${form.mensaje}`
     );
-
-    window.location.href = `mailto:nicolas.rodriguezdev@outlook.com?subject=${subject}&body=${body}`;
+    window.open(
+      `https://mail.google.com/mail/?view=cm&to=nicorodriguez953@gmail.com&su=${subject}&body=${body}`,
+      "_blank"
+    );
   };
 
   return (
@@ -33,8 +31,8 @@ export default function Contacto() {
           <h1>Contacto</h1>
           <p>
             Si te interesa mi perfil o querés hablar sobre alguna oportunidad,
-            podés escribirme directamente desde este formulario o por los
-            medios de contacto que ves al final.
+            podés escribirme desde este formulario o por los medios de contacto
+            que ves al lado.
           </p>
         </header>
 
@@ -83,8 +81,8 @@ export default function Contacto() {
             </button>
 
             <p className="cv-note" style={{ marginTop: 10 }}>
-              El formulario abre tu cliente de correo con el mensaje preparado
-              para que lo revises y lo envíes.
+              Al hacer clic se abre Gmail en el navegador con el mensaje
+              preparado para que lo revises y lo envíes.
             </p>
           </form>
 
@@ -92,11 +90,15 @@ export default function Contacto() {
             <h2>Otros medios de contacto</h2>
             <p>
               También podés escribirme directo por mail o ver más sobre mi
-              perfil profesional en LinkedIn y GitHub.
+              perfil en LinkedIn y GitHub.
             </p>
 
-            <a href="mailto:nicolas.rodriguezdev@outlook.com">
-              <span>📧</span> Enviar email directo
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=nicorodriguez953@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>📧</span> nicorodriguez953@gmail.com
             </a>
 
             <a
@@ -133,8 +135,8 @@ export default function Contacto() {
 
             <p style={{ marginTop: 16, color: "var(--text-soft)" }}>
               Respondo especialmente a mensajes relacionados con oportunidades
-              como <strong>trainee / junior</strong> en desarrollo web, proyectos
-              freelance y colaboraciones vinculadas al stack MERN.
+              como <strong>frontend / full stack junior</strong> en desarrollo
+              web, proyectos freelance y colaboraciones con stack MERN.
             </p>
           </aside>
         </div>

@@ -16,7 +16,7 @@ export default function Navbar() {
           <Link to="/" className="navbar-title" onClick={cerrarMenu}>
             Nicolás Rodríguez
           </Link>
-          <span className="navbar-role">Full Stack Developer</span>
+          <span className="navbar-role">Frontend Developer · Full Stack MERN</span>
         </div>
 
         <button
@@ -27,7 +27,7 @@ export default function Navbar() {
         >
           <span className="navbar-toggle-bar" />
         </button>
-        
+
         <nav
           className={
             "navbar-links" + (menuAbierto ? " navbar-links--open" : "")
@@ -36,28 +36,16 @@ export default function Navbar() {
           <NavLink to="/" className={linkClass} onClick={cerrarMenu}>
             Home
           </NavLink>
-          <NavLink
-            to="/proyectos"
-            className={linkClass}
-            onClick={cerrarMenu}
-          >
+          <NavLink to="/proyectos" className={linkClass} onClick={cerrarMenu}>
             Proyectos
           </NavLink>
           <NavLink to="/cv" className={linkClass} onClick={cerrarMenu}>
             CV
           </NavLink>
-          <NavLink
-            to="/sobre-mi"
-            className={linkClass}
-            onClick={cerrarMenu}
-          >
+          <NavLink to="/sobre-mi" className={linkClass} onClick={cerrarMenu}>
             Sobre mí
           </NavLink>
-          <NavLink
-            to="/contacto"
-            className={linkClass}
-            onClick={cerrarMenu}
-          >
+          <NavLink to="/contacto" className={linkClass} onClick={cerrarMenu}>
             Contacto
           </NavLink>
         </nav>

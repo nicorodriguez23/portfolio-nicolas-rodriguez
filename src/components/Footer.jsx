@@ -21,8 +21,8 @@ export default function Footer() {
           >
             GitHub
           </a>
-          <a href="mailto:nicolas.rodriguezdev@outlook.com">
-            nicolas.rodriguezdev@outlook.com
+          <a href="mailto:nicorodriguez953@gmail.com">
+            nicorodriguez953@gmail.com
           </a>
         </div>
       </div>
